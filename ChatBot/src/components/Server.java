@@ -36,6 +36,16 @@ public class Server {
 			System.out.println("IO Exception occured:  " +e);
 		}
 		
+		
+		while (true) {
+			try {
+				clientSocket = serversocket.accept();
+				
+			}
+			catch(Exception e) {
+				
+			}
+		}
 
 	}
 
