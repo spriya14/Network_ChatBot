@@ -40,10 +40,13 @@ public class Server {
 		while (true) {
 			try {
 				clientSocket = serversocket.accept();
+				CThread s = new CThread (clientSocket); 
+				clients.add (s); 
+				s.start ();
 				
 			}
 			catch(Exception e) {
-				
+				System.out.println("IOException " +e);
 			}
 		}
 
