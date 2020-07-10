@@ -68,8 +68,7 @@ JOptionPane.showMessageDialog (controllingFrame,"You can get the password by req
 // declaring 
 	private static boolean  isPasswordCorrect (char [] input) { 
 		boolean isCorrect = true; 
-		char[] correctPassword = new char[6];
-		//correctPassword = {'t', 'e', ​​'s', 't', 'i', 'n', 'g'}; 
+		char[] correctPassword = {'t'}; 
 		if (input.length!= correctPassword.length) { 
 			isCorrect = false; 
 		} 	
